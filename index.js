@@ -133,7 +133,7 @@ const searchInput = document.querySelector("[data-searchInput]");
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  let cityName = searchInput.value;
+  let cityName = searchInput.value.trim();
   console.log(cityName);
 
   if (cityName === " ")
